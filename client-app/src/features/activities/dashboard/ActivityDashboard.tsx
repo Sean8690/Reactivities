@@ -1,4 +1,3 @@
-import { deepEqual } from 'node:assert';
 import React from 'react';
 import { Grid} from 'semantic-ui-react';
 import { Activity } from '../../../app/layout/models/activity';
@@ -16,11 +15,12 @@ interface Props {
     closeForm: () => void;
     createOrEdit: (activity: Activity) => void;
     deleteActivity: (id: string) => void;
+    submitting: boolean
 }
 
 export default function ActivityDashboard(props: Props) {
     const {activities, selectedActivity, selectActivity, cancelSelectActivity, editMode, 
-        openForm, closeForm, createOrEdit, deleteActivity} = props; 
+        openForm, closeForm, createOrEdit, deleteActivity, submitting} = props; 
 
     return (
         <Grid>
@@ -28,6 +28,7 @@ export default function ActivityDashboard(props: Props) {
                 <ActivityList activities={activities} 
                     selectActivity={selectActivity}
                     deleteActivity={deleteActivity}
+                    submitting={submitting}
                 />
             </Grid.Column>
             <Grid.Column width='6'>
@@ -38,7 +39,12 @@ export default function ActivityDashboard(props: Props) {
                        openForm={openForm}
                 />}    
                 {editMode &&
-                <ActivityForm closeForm={closeForm} activity={selectedActivity} createOrEdit={createOrEdit}/>}
+                <ActivityForm 
+                    closeForm={closeForm} 
+                    activity={selectedActivity} 
+                    createOrEdit={createOrEdit}
+                    submitting={submitting}
+                />}
             </Grid.Column>
         </Grid>
     )
