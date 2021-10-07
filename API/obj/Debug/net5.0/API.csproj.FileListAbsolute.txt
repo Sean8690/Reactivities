@@ -63,3 +63,6 @@
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/AutoMapper.dll
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/FluentValidation.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/FluentValidation.AspNetCore.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/FluentValidation.DependencyInjectionExtensions.dll
