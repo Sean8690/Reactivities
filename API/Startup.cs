@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Extensions;
 using API.Middleware;
 using Application.Activities;
 using Application.Core;
@@ -38,6 +39,8 @@ namespace API
             {
                 config.RegisterValidatorsFromAssemblyContaining<Create>();
             });
+            services.AddIdentityServices(_config);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
