@@ -16,7 +16,6 @@
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Application.pdb
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Domain.pdb
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Persistence.pdb
-/Users/se/Source/Reactivities/API/obj/Debug/net5.0/API.csprojAssemblyReference.cache
 /Users/se/Source/Reactivities/API/obj/Debug/net5.0/API.GeneratedMSBuildEditorConfig.editorconfig
 /Users/se/Source/Reactivities/API/obj/Debug/net5.0/API.AssemblyInfoInputs.cache
 /Users/se/Source/Reactivities/API/obj/Debug/net5.0/API.AssemblyInfo.cs
@@ -71,3 +70,11 @@
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.Extensions.Identity.Core.dll
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/se/Source/Reactivities/API/obj/Debug/net5.0/API.csproj.AssemblyReference.cache
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll

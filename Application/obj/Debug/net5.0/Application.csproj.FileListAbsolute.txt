@@ -6,7 +6,6 @@
 /Users/se/Source/Reactivities/Application/bin/Debug/net5.0/Persistence.dll
 /Users/se/Source/Reactivities/Application/bin/Debug/net5.0/Persistence.pdb
 /Users/se/Source/Reactivities/Application/bin/Debug/net5.0/Domain.pdb
-/Users/se/Source/Reactivities/Application/obj/Debug/net5.0/Application.csprojAssemblyReference.cache
 /Users/se/Source/Reactivities/Application/obj/Debug/net5.0/Application.GeneratedMSBuildEditorConfig.editorconfig
 /Users/se/Source/Reactivities/Application/obj/Debug/net5.0/Application.AssemblyInfoInputs.cache
 /Users/se/Source/Reactivities/Application/obj/Debug/net5.0/Application.AssemblyInfo.cs
@@ -15,3 +14,4 @@
 /Users/se/Source/Reactivities/Application/obj/Debug/net5.0/Application.dll
 /Users/se/Source/Reactivities/Application/obj/Debug/net5.0/ref/Application.dll
 /Users/se/Source/Reactivities/Application/obj/Debug/net5.0/Application.pdb
+/Users/se/Source/Reactivities/Application/obj/Debug/net5.0/Application.csproj.AssemblyReference.cache

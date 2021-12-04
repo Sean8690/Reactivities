@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using MediatR;
 using Application.Activities;
 
 namespace API.Controllers
