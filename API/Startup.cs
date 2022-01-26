@@ -6,7 +6,9 @@ using API.Extensions;
 using API.Middleware;
 using Application.Activities;
 using Application.Core;
+using Application.Interfaces;
 using FluentValidation.AspNetCore;
+using Infrastructure.Security;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -60,6 +62,7 @@ namespace API
             services.AddCors();
             services.AddMediatR(typeof(List.Handler).Assembly);
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+            services.AddScoped<IUserAccessor, UserAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
