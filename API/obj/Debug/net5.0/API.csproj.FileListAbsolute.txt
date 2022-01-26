@@ -78,3 +78,5 @@
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
 /Users/se/Source/Reactivities/API/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Infrastructure.dll
+/Users/se/Source/Reactivities/API/bin/Debug/net5.0/Infrastructure.pdb
