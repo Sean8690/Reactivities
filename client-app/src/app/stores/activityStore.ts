@@ -3,7 +3,7 @@ import agent from "../api/agent";
 import { Activity, ActivityFormValues } from "../layout/models/activity";
 import { format } from "date-fns";
 import { store } from "./store";
-import { Profile } from "../layout/models/Profile";
+import { Profile } from "../layout/models/profile";
 
 export default class ActivityStore {
     activityRegistry = new Map<string, Activity>();
