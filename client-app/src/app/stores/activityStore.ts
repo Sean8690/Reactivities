@@ -199,7 +199,6 @@ export default class ActivityStore {
         }
     }
 
-<<<<<<< HEAD
     updateAttendeeFollowing = (username: string) => {
         this.activityRegistry.forEach(activity => {
             activity.attendees.forEach(attendee => {
@@ -209,9 +208,9 @@ export default class ActivityStore {
                 }
             })
         })
-=======
+    }
+
     clearSelectedActivity = () => {
         this.selectedActivity = undefined;
->>>>>>> master
     }
 }
