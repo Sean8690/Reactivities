@@ -5,15 +5,16 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using Application.Activities;
 using Microsoft.AspNetCore.Authorization;
+using Application.Core;
 
 namespace API.Controllers
 {
     public class ActivitiesController : BaseApiController
     {
         [HttpGet]
-        public async Task<ActionResult> GetActivities()
+        public async Task<ActionResult> GetActivities([FromQuery]ActivityParams param)
         {
-            return HandleResults(await Mediator.Send(new List.Query()));
+            return HandlePageResults(await Mediator.Send(new List.Query{Params = param}));
         }
 
         [HttpGet("{id}")]
