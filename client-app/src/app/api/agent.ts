@@ -1,9 +1,10 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import { toast } from 'react-toastify';
+import { string } from 'yup';
 import { history } from '../..';
 import { Activity, ActivityFormValues } from '../layout/models/activity';
 import { PaginatedResult } from '../layout/models/pagination';
-import { Photo, Profile } from '../layout/models/profile';
+import { Photo, Profile, UserActivity } from '../layout/models/profile';
 import { User, UserFormValues } from '../layout/models/users';
 import { store } from '../stores/store';
 
@@ -81,7 +82,7 @@ const Activities = {
     create: (activity: ActivityFormValues) => requests.post<void>('/activities', activity),
     update: (activity: ActivityFormValues) => requests.put<void>(`/activities/${activity.id}`, activity),
     delete: (id: string) => requests.del<void>(`/activities/${id}`),
-    attend: (id: string) => requests.post<void>(`/activities/${id}/attend`, {})
+    attend: (id: string) => requests.post<void>(`/activities/${id}/attend`, {}) 
 }
 
 const Account = {
@@ -103,7 +104,9 @@ const Profiles = {
     deletePhoto: (id: string) => requests.del(`/photos/${id}`),
     updateFollowing: (username: string) => requests.post(`/follow/${username}`, {}),
     listFollowings: (username: string, predicate: string) => 
-        requests.get<Profile[]>(`/follow/${username}?predicate=${predicate}`)
+        requests.get<Profile[]>(`/follow/${username}?predicate=${predicate}`),
+    listActivities: (username: string, predicate: string) => 
+        requests.get<UserActivity[]>(`/profiles/${username}/activities?predicate=${predicate}`)    
 }
 
 const agent = {
