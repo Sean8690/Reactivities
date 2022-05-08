@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+    //This controller for Testing Errors
+    //There is a UI side utilizing it 
     public class BuggyController : BaseApiController
     {
         [HttpGet("not-found")]

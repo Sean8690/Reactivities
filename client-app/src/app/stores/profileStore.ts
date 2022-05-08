@@ -191,5 +191,28 @@ export default class ProfileStore {
              })
          }
      }
+
+     updateProfile = async (profile: Partial<Profile>) =>
+     {
+         this.loading = true;
+
+         try {
+             console.log("Calling updateProfile agent.ts");
+             const result = await agent.Profiles.updateProfile(profile);
+             console.log(result);
+             runInAction(() => {
+                 if(profile.displayName && profile.displayName !== store.userStore.user?.displayName)
+                 {
+                     store.userStore.setDisplayName(profile.displayName);
+                 }
+                 this.profile = {...this.profile, ...profile as Profile};
+                 this.loading = false;
+             })
+         }
+         catch(error){
+             console.log(error);
+             runInAction(() => this.loading = false);
+         }
+     }
 }
 

@@ -75,9 +75,11 @@ namespace API.Controllers
 
             return  BadRequest("Problem registering user");   
         }
-
+        
         [Authorize]
         [HttpGet]
+        //This end point for testing only
+        //Need to pass token e.g in Postman to get Current User
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
             var user = await _userManager.Users.Include(p => p.Photos)

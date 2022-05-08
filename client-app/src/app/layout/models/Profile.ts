@@ -31,3 +31,8 @@ export interface UserActivity {
     category: string;
     date: Date;
 }
+
+export interface UserAbout {
+    displayName: string;
+    bio: string;
+}

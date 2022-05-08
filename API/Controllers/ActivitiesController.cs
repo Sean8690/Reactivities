@@ -1,11 +1,9 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Application.Activities;
 using Microsoft.AspNetCore.Authorization;
-using Application.Core;
 
 namespace API.Controllers
 {

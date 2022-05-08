@@ -1,7 +1,6 @@
 import { observer } from 'mobx-react-lite';
 import React, { useEffect, useState } from 'react';
 import {Button, Grid} from 'semantic-ui-react';
-import LoadingComponenet from '../../../app/layout/loadingComponent';
 import { PagingParams } from '../../../app/layout/models/pagination';
 import { useStore } from '../../../app/stores/store';
 import ActivityFilters from './ActivityFilters';
