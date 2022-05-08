@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Application.Profiles;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +18,12 @@ namespace API.Controllers
         {
             return HandleResults(await Mediator.Send(new ListActivities.Query
                 {Username = username, Predicate = predicate}));
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Edit(Edit.Command command)
+        {
+            return HandleResults(await Mediator.Send(command));
         }
     }
 }
