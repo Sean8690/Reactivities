@@ -1,5 +1,4 @@
 import { format } from "date-fns";
-import { observe } from "mobx";
 import { observer } from "mobx-react-lite";
 import { SyntheticEvent, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -55,7 +54,7 @@ export default observer(function ProfileActivities() {
                             />    
                             <Card.Content>
                                 <Card.Header
-                                    textAlign='center'{...activity.title}>
+                                    textAlign='center'{...activity.title as unknown as object}>
                                 </Card.Header>
                                 <Card.Meta textAlign='center'>
                                     <div>{format(new Date(activity.date), 'do LLL')}</div>
