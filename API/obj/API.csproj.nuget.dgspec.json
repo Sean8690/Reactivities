@@ -1,36 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/se/Source/Reactivities/API/API.csproj": {}
+    "/Users/seanelias/Source/repo/Reactivities/API/API.csproj": {}
   },
   "projects": {
-    "/Users/se/Source/Reactivities/API/API.csproj": {
+    "/Users/seanelias/Source/repo/Reactivities/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/se/Source/Reactivities/API/API.csproj",
+        "projectUniqueName": "/Users/seanelias/Source/repo/Reactivities/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/se/Source/Reactivities/API/API.csproj",
-        "packagesPath": "/Users/se/.nuget/packages/",
-        "outputPath": "/Users/se/Source/Reactivities/API/obj/",
+        "projectPath": "/Users/seanelias/Source/repo/Reactivities/API/API.csproj",
+        "packagesPath": "/Users/seanelias/.nuget/packages/",
+        "outputPath": "/Users/seanelias/Source/repo/Reactivities/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/se/.nuget/NuGet/NuGet.Config"
+          "/Users/seanelias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/se/Source/Reactivities/Application/Application.csproj": {
-                "projectPath": "/Users/se/Source/Reactivities/Application/Application.csproj"
+              "/Users/seanelias/Source/repo/Reactivities/Application/Application.csproj": {
+                "projectPath": "/Users/seanelias/Source/repo/Reactivities/Application/Application.csproj"
               },
-              "/Users/se/Source/Reactivities/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/Users/se/Source/Reactivities/Infrastructure/Infrastructure.csproj"
+              "/Users/seanelias/Source/repo/Reactivities/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/seanelias/Source/repo/Reactivities/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -42,18 +42,18 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -66,7 +66,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -78,37 +79,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/se/Source/Reactivities/Application/Application.csproj": {
+    "/Users/seanelias/Source/repo/Reactivities/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/se/Source/Reactivities/Application/Application.csproj",
+        "projectUniqueName": "/Users/seanelias/Source/repo/Reactivities/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/se/Source/Reactivities/Application/Application.csproj",
-        "packagesPath": "/Users/se/.nuget/packages/",
-        "outputPath": "/Users/se/Source/Reactivities/Application/obj/",
+        "projectPath": "/Users/seanelias/Source/repo/Reactivities/Application/Application.csproj",
+        "packagesPath": "/Users/seanelias/.nuget/packages/",
+        "outputPath": "/Users/seanelias/Source/repo/Reactivities/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/se/.nuget/NuGet/NuGet.Config"
+          "/Users/seanelias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/se/Source/Reactivities/Domain/Domain.csproj": {
-                "projectPath": "/Users/se/Source/Reactivities/Domain/Domain.csproj"
+              "/Users/seanelias/Source/repo/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/Users/seanelias/Source/repo/Reactivities/Domain/Domain.csproj"
               },
-              "/Users/se/Source/Reactivities/Persistence/Persistence.csproj": {
-                "projectPath": "/Users/se/Source/Reactivities/Persistence/Persistence.csproj"
+              "/Users/seanelias/Source/repo/Reactivities/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/seanelias/Source/repo/Reactivities/Persistence/Persistence.csproj"
               }
             }
           }
@@ -120,24 +121,24 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[8.1.1, )"
+              "version": "[12.0.0, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[10.3.3, )"
+              "version": "[11.2.2, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[11.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -146,7 +147,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -155,31 +157,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/se/Source/Reactivities/Domain/Domain.csproj": {
+    "/Users/seanelias/Source/repo/Reactivities/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/se/Source/Reactivities/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/seanelias/Source/repo/Reactivities/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/se/Source/Reactivities/Domain/Domain.csproj",
-        "packagesPath": "/Users/se/.nuget/packages/",
-        "outputPath": "/Users/se/Source/Reactivities/Domain/obj/",
+        "projectPath": "/Users/seanelias/Source/repo/Reactivities/Domain/Domain.csproj",
+        "packagesPath": "/Users/seanelias/.nuget/packages/",
+        "outputPath": "/Users/seanelias/Source/repo/Reactivities/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/se/.nuget/NuGet/NuGet.Config"
+          "/Users/seanelias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -190,16 +192,16 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -208,7 +210,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -217,34 +220,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/se/Source/Reactivities/Infrastructure/Infrastructure.csproj": {
+    "/Users/seanelias/Source/repo/Reactivities/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/se/Source/Reactivities/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/seanelias/Source/repo/Reactivities/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/se/Source/Reactivities/Infrastructure/Infrastructure.csproj",
-        "packagesPath": "/Users/se/.nuget/packages/",
-        "outputPath": "/Users/se/Source/Reactivities/Infrastructure/obj/",
+        "projectPath": "/Users/seanelias/Source/repo/Reactivities/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/seanelias/.nuget/packages/",
+        "outputPath": "/Users/seanelias/Source/repo/Reactivities/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/se/.nuget/NuGet/NuGet.Config"
+          "/Users/seanelias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/se/Source/Reactivities/Application/Application.csproj": {
-                "projectPath": "/Users/se/Source/Reactivities/Application/Application.csproj"
+              "/Users/seanelias/Source/repo/Reactivities/Application/Application.csproj": {
+                "projectPath": "/Users/seanelias/Source/repo/Reactivities/Application/Application.csproj"
               }
             }
           }
@@ -256,12 +259,12 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "CloudinaryDotNet": {
               "target": "Package",
-              "version": "[1.17.0, )"
+              "version": "[1.20.0, )"
             }
           },
           "imports": [
@@ -270,7 +273,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -279,34 +283,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/se/Source/Reactivities/Persistence/Persistence.csproj": {
+    "/Users/seanelias/Source/repo/Reactivities/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/se/Source/Reactivities/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/seanelias/Source/repo/Reactivities/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/se/Source/Reactivities/Persistence/Persistence.csproj",
-        "packagesPath": "/Users/se/.nuget/packages/",
-        "outputPath": "/Users/se/Source/Reactivities/Persistence/obj/",
+        "projectPath": "/Users/seanelias/Source/repo/Reactivities/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/seanelias/.nuget/packages/",
+        "outputPath": "/Users/seanelias/Source/repo/Reactivities/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/se/.nuget/NuGet/NuGet.Config"
+          "/Users/seanelias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/se/Source/Reactivities/Domain/Domain.csproj": {
-                "projectPath": "/Users/se/Source/Reactivities/Domain/Domain.csproj"
+              "/Users/seanelias/Source/repo/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/Users/seanelias/Source/repo/Reactivities/Domain/Domain.csproj"
               }
             }
           }
@@ -318,12 +322,12 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[7.0.2, )"
             }
           },
           "imports": [
@@ -332,7 +336,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -341,7 +346,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

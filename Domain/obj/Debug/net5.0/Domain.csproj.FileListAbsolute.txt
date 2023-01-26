@@ -10,3 +10,15 @@
 /Users/se/Source/Reactivities/Domain/obj/Debug/net5.0/ref/Domain.dll
 /Users/se/Source/Reactivities/Domain/obj/Debug/net5.0/Domain.pdb
 /Users/se/Source/Reactivities/Domain/obj/Debug/net5.0/Domain.csproj.AssemblyReference.cache
+/Users/seanelias/Source/repo/Reactivities/Domain/bin/Debug/net5.0/Domain.deps.json
+/Users/seanelias/Source/repo/Reactivities/Domain/bin/Debug/net5.0/Domain.dll
+/Users/seanelias/Source/repo/Reactivities/Domain/bin/Debug/net5.0/Domain.pdb
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/Domain.csproj.AssemblyReference.cache
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/Domain.AssemblyInfoInputs.cache
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/Domain.AssemblyInfo.cs
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/Domain.csproj.CoreCompileInputs.cache
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/Domain.dll
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/refint/Domain.dll
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/Domain.pdb
+/Users/seanelias/Source/repo/Reactivities/Domain/obj/Debug/net5.0/ref/Domain.dll
