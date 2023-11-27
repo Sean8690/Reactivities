@@ -1,5 +1,5 @@
 import { observer } from "mobx-react-lite";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Grid } from "semantic-ui-react";
 import LoadingComponenet from "../../app/layout/loadingComponent";
@@ -14,7 +14,7 @@ export default observer(function ProfilePage() {
     const {loadingProfle, loadProfile, profile, setActiveTab} = profileStore;
 
     useEffect(() => {
-        loadProfile(username);
+        if(username) loadProfile(username);
         return () => {
             setActiveTab(0);
         }

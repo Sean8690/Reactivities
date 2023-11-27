@@ -1,47 +1,100 @@
-using System;
-using System.Threading.Tasks;
+using API.Extensions;
+using API.Middleware;
+using API.SignalR;
+using Application.Activities;
+using Application.Core;
+using Application.Interfaces;
 using Domain;
-using Microsoft.AspNetCore.Hosting;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Infrastructure.Photos;
+using Infrastructure.Security;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using Persistence;
 
-namespace API
+
+var builder = WebApplication.CreateBuilder(args);
+
+//Add services to the container
+builder.Services.AddControllers(opt =>
 {
-    public class Program
+    var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+    opt.Filters.Add(new AuthorizeFilter(policy));
+
+});
+builder.Services.AddIdentityServices(builder.Configuration);
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
+});
+builder.Services.AddDbContext<DataContext>(opt =>
+{
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolicy", policy =>
     {
-        public static async Task Main(string[] args)
-        {
-           var host = CreateHostBuilder(args).Build();
+        policy
+       .AllowAnyMethod()
+       .AllowAnyHeader()
+        .AllowCredentials()
+        .WithOrigins("http://localhost:3000");
+    });
+});
 
-           using var scope = host.Services.CreateScope();
+builder.Services.AddMediatR(typeof(List.Handler).Assembly);
+builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+builder.Services.AddScoped<IUserAccessor, UserAccessor>();
+builder.Services.AddScoped<IPhotoAccessor, PhotoAccessor>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("Cloudinary"));
+builder.Services.AddSignalR();
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<Create>();
 
-           var services = scope.ServiceProvider;
+//Configure the HTTP request pipeline
 
-           try
-           {
-               var context = services.GetRequiredService<DataContext>();
-               var userManager = services.GetRequiredService<UserManager<AppUser>>();
-               await context.Database.MigrateAsync();
-               await Seed.SeedData(context, userManager);
-           }
-           catch (Exception ex)
-           {
-               var logger = services.GetRequiredService<ILogger<Program>>();
-               logger.LogError(ex, "An error occured during migration");
-           }
+var app = builder.Build();
 
-           await host.RunAsync();
-        }
+app.UseMiddleware<ExceptionMiddleware>();
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
-    }
+if (builder.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
 }
+
+app.UseCors("CorsPolicy");
+
+// app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapControllers();
+app.MapHub<ChatHub>("/chat");
+
+using var scope = app.Services.CreateScope();
+
+var services = scope.ServiceProvider;
+
+try
+{
+    var context = services.GetRequiredService<DataContext>();
+    var userManager = services.GetRequiredService<UserManager<AppUser>>();
+    await context.Database.MigrateAsync();
+    await Seed.SeedData(context, userManager);
+}
+catch (Exception ex)
+{
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    logger.LogError(ex, "An error occured during migration");
+}
+
+app.Run();
